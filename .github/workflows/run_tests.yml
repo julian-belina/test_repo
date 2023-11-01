@@ -1,8 +1,7 @@
 name: Run ETHOS.PeNALPS Tests
 
 on:
-  push:
-    branches: [ $default-branch ]
+  push
   pull_request:
     branches: [ $default-branch ]
   workflow_dispatch:
@@ -15,7 +14,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: echo current working directory
-          run: echo ${GITHUB_WORKSPACE}
+          shell: bash
+          run: ls
         - name: list
           run:  |
               ls ${{ github.workspace }}
