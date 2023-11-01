@@ -19,7 +19,7 @@ jobs:
       steps:
         - name: echo current working directory
           shell: bash
-          run: > 
+          run: |
             ls
             cd ..
             ls
