@@ -17,7 +17,12 @@ jobs:
         - name: echo current working directory
           run: echo ${GITHUB_WORKSPACE}
         - name: list
-          run: echo ls
+          run:  >
+            search_dir=/the/path/to/base/dir
+            for entry in "$search_dir"/*
+            do
+              echo "$entry"
+            done
         - uses: mamba-org/setup-micromamba@v1
           with:
             micromamba-version: '1.5.1-1'
