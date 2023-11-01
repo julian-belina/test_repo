@@ -2,11 +2,11 @@ name: Run ETHOS.PeNALPS Tests
 
 on:
   push:
-    branches: {{ github.event.repository.default_branch }}
+    branches: main
   pull_request:
-    branches: [ $default-branch ]
+    branches: main
   workflow_dispatch:
-    branches: [ $default-branch ]
+    branches: main
 
 
 jobs:
