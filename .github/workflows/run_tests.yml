@@ -17,7 +17,7 @@ jobs:
         - name: echo current working directory
           run: echo ${GITHUB_WORKSPACE}
         - name: list
-          run: ls
+          run: echo ls
         - uses: mamba-org/setup-micromamba@v1
           with:
             micromamba-version: '1.5.1-1'
