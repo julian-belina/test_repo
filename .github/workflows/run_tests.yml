@@ -19,7 +19,10 @@ jobs:
       steps:
         - name: echo current working directory
           shell: bash
-          run: ls
+          run: > 
+          ls
+          cd ..
+          ls
         - name: list
           run:  |
               ls ${{ github.workspace }}
