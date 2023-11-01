@@ -13,6 +13,9 @@ jobs:
   run_test_on_micromamba:
       name: Run test on micromamba image
       runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: .
       steps:
         - name: echo current working directory
           shell: bash
