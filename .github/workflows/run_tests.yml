@@ -20,9 +20,9 @@ jobs:
         - name: echo current working directory
           shell: bash
           run: > 
-          ls
-          cd ..
-          ls
+            ls
+            cd ..
+            ls
         - name: list
           run:  |
               ls ${{ github.workspace }}
